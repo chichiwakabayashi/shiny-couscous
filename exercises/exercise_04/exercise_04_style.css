@@ -1,0 +1,50 @@
+body{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Cutive Mono', monospace;
+}
+
+p{
+    text-align: justify;
+}
+h2, h4 {
+    text-align: center;
+}
+
+.side {
+    text-align: right;
+}
+
+.orange{
+    color: rgb(242, 134, 10)
+}
+.pink{
+    color:rgb(250, 92, 211);
+}
+
+.large{
+    font-size: 18px;
+}
+
+p {
+    font-size: 12px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.right {
+    border: 2px solid rgb(242, 134, 10);
+    padding: 40px 40px 40px 40px;
+    margin: 40px 40px 40px 40px;
+    width: 600px;
+    background-color: rgb(255, 253, 250);
+}
+.left {
+    border: 2px solid rgb(250, 92, 211);
+    margin: 40px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
+    width: 600px;
+    background-color: rgb(255, 253, 255);
+}
