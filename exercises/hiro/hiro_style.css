@@ -14,12 +14,30 @@ nav {
 
 ul.container {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     list-style-type: none;
-    margin: 20px;
+    margin: 100px;
 }
 
 .container a {
     text-decoration: none;
     color: black;
+    font-size: 14px;
+    padding: 5px 10px 15px 20px;
+}
+li {
+    padding: 0 10px;
+}
+li:hover {
+animation: colors 5s;
+}
+
+@keyframes colors {
+    0%{
+        background-color: gainsboro;
+    }
+    100%{
+        background-color: gainsboro;
+    }
 }
