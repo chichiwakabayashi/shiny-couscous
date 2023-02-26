@@ -41,3 +41,7 @@ animation: colors 5s;
         background-color: gainsboro;
     }
 }
+
+img {
+    width: 30%;
+}
