@@ -67,6 +67,16 @@ h1 {
     font-size: 36px;
 }
 
+#post input {
+    background-color: rgb(139, 211, 255);
+    border: none;
+    border-radius: 25px;
+    color:rgb(255, 255, 255);
+    padding: 14px;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 12px;
+}
+
 .columnone {
     display: flex;
     flex-direction: column;

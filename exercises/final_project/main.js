@@ -2,10 +2,10 @@ const canvas = document.getElementById('drawing-board');
 const toolbar = document.getElementById('toolbar');
 const ctx = canvas.getContext('2d');
 
-const canvasOffsetX = canvas.offsetLeft;
-const canvasOffsetY = canvas.offsetTop;
+const canvasOffsetX = canvas.getBoundingClientRect().left;
+const canvasOffsetY = canvas.getBoundingClientRect().top;
 
-canvas.width = window.innerWidth - canvasOffsetX;
+canvas.width = window.innerWidth / 3 - canvasOffsetX;
 canvas.height = window.innerHeight - canvasOffsetY;
 
 let isPainting = false;
