@@ -55,3 +55,26 @@ canvas.addEventListener('mouseup', e => {
 });
 
 canvas.addEventListener('mousemove', draw);
+
+
+document.getElementById('save').onclick = function () {
+    window.location = document.getElementById("canvas").toDataURL('image/png');
+  };
+
+btn.addEventListener('click', addSketchToPage)
+function addSketchToPage(event){  
+      localStorage.setItem("cloud", strImg);
+      document.querySelector('.gallery');
+      let dataImage = localStorage.getItem('cloud');
+      createElement()
+      Image.setAttribute("src", dateImage);  
+}
+
+$(document).ready(function(e) {
+    var width = "+=" + $(document).width();
+    $("#animate").animate({
+    left: width
+  }, 5000, function() {
+    $("#animate").css("display", "none");
+  });
+});
