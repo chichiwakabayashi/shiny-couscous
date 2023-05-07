@@ -67,14 +67,6 @@ function addSketchToPage(event){
       document.querySelector('.gallery');
       let dataImage = localStorage.getItem('cloud');
       createElement()
-      Image.setAttribute("src", dateImage);  
+      image.setAttribute("src", dataImage);  
 }
 
-$(document).ready(function(e) {
-    var width = "+=" + $(document).width();
-    $("#animate").animate({
-    left: width
-  }, 5000, function() {
-    $("#animate").css("display", "none");
-  });
-});
