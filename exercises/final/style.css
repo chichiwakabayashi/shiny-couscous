@@ -6,8 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height:100vh;
-    background-color: aquamarine;
+    background-color: rgb(194, 221, 252);
 }
 
 .container {
@@ -20,6 +19,12 @@ body {
 
 section{
     background: white;
+}
+
+.title {
+    font-size: 16px;
+    color: #e5943d;
+    font-weight: bold;
 }
 
 .tools-board {
@@ -54,7 +59,8 @@ section{
 }
 
 .option:is(:hover, .active) :where(span, label){
-    color: pink;
+    color: #e5943d;
+    font-size: 10px;
 }
 
 .option #size-slider{
@@ -66,6 +72,7 @@ section{
 .colors .options{
     display: flex;
     justify-content: space-between; 
+    padding: 5px;
 }
 
 .colors .option{
@@ -77,24 +84,24 @@ section{
 }
 
 .colors .option:nth-child(1){
-    background: white;
-    border: 1px solid rgb(206, 206, 206);
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
 }
 
 .colors .option:nth-child(2){
-    background: black;
+    background-color: #000000;
 }
 
 .colors .option:nth-child(3){
-    background: rgb(229, 148, 61);
+    background-color: #e5943d;
 }
 
 .colors .option:nth-child(4){
-    background: rgb(241, 149, 234);
+    background-color: #f195ea;
 }
 
 .colors .option:nth-child(5){
-    background: #bbefa3;
+    background-color: #bbefa3;
 }
 
 .colors .option.selected::before{
@@ -148,8 +155,9 @@ section{
 }
 
 .buttons .save-img{
-    background: pink;
-    border: 2px solid pink;
+    background: rgb(139, 211, 255);
+    border: 2px solid rgb(139, 211, 255);
+    font-family: 'Rubik Bubbles', cursive;
 }
 
 .drawing-board{
@@ -160,3 +168,229 @@ section{
     width:400px;
     height: 300px;
 }
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes slide{
+    0% {left: -300px;
+      opacity: 0%;
+  }
+  25%{
+      opacity: 100%;
+  }
+    100% {left: 1500px;
+  }
+}
+
+.cloud {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 300px;
+}
+
+  .cloud {
+    position: absolute;
+    animation: slide 20s linear infinite;
+    -webkit-animation: slide 20s linear infinite;
+    -moz-animation: slide 20s linear infinite;
+    -o-animation: slide 20s linear infinite;
+  }
+
+  .cloud2 {
+    height: 150px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 350px;
+}
+
+  .cloud2 {
+    position: absolute;
+    animation: slide 25s linear infinite;
+    -webkit-animation: slide 25s linear infinite;
+    -moz-animation: slide 25s linear infinite;
+    -o-animation: slide 25s linear infinite;
+  }
+
+  .cloud3 {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 300px;
+}
+
+  .cloud3 {
+    position: absolute;
+    animation: slide 18s linear infinite;
+    -webkit-animation: slide 18s linear infinite;
+    -moz-animation: slide 18s linear infinite;
+    -o-animation: slide 18s linear infinite;
+  }
+
+  .cloud4 {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 350px;
+}
+
+  .cloud4 {
+    position: absolute;
+    animation: slide 30s linear infinite;
+    -webkit-animation: slide 30s linear infinite;
+    -moz-animation: slide 30s linear infinite;
+    -o-animation: slide 30s linear infinite;
+  }
+
+  .cloud5 {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 400px;
+}
+
+  .cloud5 {
+    position: absolute;
+    animation: slide 23s linear infinite;
+    -webkit-animation: slide 23s linear infinite;
+    -moz-animation: slide 23s linear infinite;
+    -o-animation: slide 23s linear infinite;
+  }
+
+  .cloud6 {
+    height: 150px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 350px;
+}
+
+  .cloud6 {
+    position: absolute;
+    animation: slide 15s linear infinite;
+    -webkit-animation: slide 15s linear infinite;
+    -moz-animation: slide 15s linear infinite;
+    -o-animation: slide 15s linear infinite;
+  }
+
+  .cloud7 {
+    height: 100px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 450px;
+}
+
+  .cloud7 {
+    position: absolute;
+    animation: slide 27s linear infinite;
+    -webkit-animation: slide 27s linear infinite;
+    -moz-animation: slide 27s linear infinite;
+    -o-animation: slide 27s linear infinite;
+  }
+
+  .cloud8 {
+    height: 170px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 400px;
+}
+
+  .cloud8 {
+    position: absolute;
+    animation: slide 40s linear infinite;
+    -webkit-animation: slide 40s linear infinite;
+    -moz-animation: slide 40s linear infinite;
+    -o-animation: slide 40s linear infinite;
+  }
+
+  .cloud9 {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 325px;
+}
+
+  .cloud9 {
+    position: absolute;
+    animation: slide 22s linear infinite;
+    -webkit-animation: slide 22s linear infinite;
+    -moz-animation: slide 22s linear infinite;
+    -o-animation: slide 22s linear infinite;
+  }
+
+  .cloud10 {
+    height: 175px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 550px;
+}
+
+  .cloud10 {
+    position: absolute;
+    animation: slide 20s linear infinite;
+    -webkit-animation: slide 20s linear infinite;
+    -moz-animation: slide 20s linear infinite;
+    -o-animation: slide 20s linear infinite;
+  }
+
+  .cloud11 {
+    height: 175px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 425px;
+}
+
+  .cloud11 {
+    position: absolute;
+    animation: slide 35s linear infinite;
+    -webkit-animation: slide 35s linear infinite;
+    -moz-animation: slide 35s linear infinite;
+    -o-animation: slide 35s linear infinite;
+  }
+
+  .cloud12 {
+    height: 100px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 600px;
+}
+
+  .cloud12 {
+    position: absolute;
+    animation: slide 42s linear infinite;
+    -webkit-animation: slide 42s linear infinite;
+    -moz-animation: slide 42s linear infinite;
+    -o-animation: slide 42s linear infinite;
+  }
+
+  .cloud13 {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 500px;
+}
+
+  .cloud13 {
+    position: absolute;
+    animation: slide 16s linear infinite;
+    -webkit-animation: slide 16s linear infinite;
+    -moz-animation: slide 16s linear infinite;
+    -o-animation: slide 16s linear infinite;
+  }
+
+  .cloud14 {
+    height: 200px;
+    overflow:hidden;
+    position:relative;
+    padding-top: 650px;
+}
+
+  .cloud14 {
+    position: absolute;
+    animation: slide 26s linear infinite;
+    -webkit-animation: slide 26s linear infinite;
+    -moz-animation: slide 26s linear infinite;
+    -o-animation: slide 26s linear infinite;
+  }
