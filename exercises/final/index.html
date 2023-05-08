@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>sky</title>
+
+<!--google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+<!--stylesheet-->
+<link rel="stylesheet" href="./style.css">
+<script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class ="tools-board">
+            <div class="row">
+                <label class="title">draw!</label>
+            </div>
+            <div class="row">
+            <label class ="title">options</label>
+            <ul class="options">
+                <li class="option active">
+                    <span>brush</span>
+                </li>
+                <li class="option">
+                    <span>eraser</span>
+                </li>
+                <li class="option">
+                    <input type="range" id="size-slider">
+                </li>
+            </ul>
+            </div>
+            <div class="row colors">
+                <label class="title">colors</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#bbefa3">
+                    </li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">clear</button>
+                <button class="save-img">save cloud</button>
+            </div>
+    </section>
+    <section class="drawing-board">
+        <canvas></canvas>
+    </section>
+</div>
+
+</body>
+</html>
