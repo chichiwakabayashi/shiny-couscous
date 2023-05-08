@@ -6,6 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
     background-color: rgb(194, 221, 252);
 }
 
@@ -170,8 +171,8 @@ section{
 }
 
 .gallery {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  padding-top: 400px;
 }
 
 @keyframes slide{
@@ -189,7 +190,7 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 300px;
+    object-position: top 300px;
 }
 
   .cloud {
@@ -204,7 +205,6 @@ section{
     height: 150px;
     overflow:hidden;
     position:relative;
-    padding-top: 350px;
 }
 
   .cloud2 {
@@ -219,7 +219,6 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 300px;
 }
 
   .cloud3 {
@@ -234,7 +233,6 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 350px;
 }
 
   .cloud4 {
@@ -249,7 +247,6 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 400px;
 }
 
   .cloud5 {
@@ -264,7 +261,6 @@ section{
     height: 150px;
     overflow:hidden;
     position:relative;
-    padding-top: 350px;
 }
 
   .cloud6 {
@@ -279,7 +275,6 @@ section{
     height: 100px;
     overflow:hidden;
     position:relative;
-    padding-top: 450px;
 }
 
   .cloud7 {
@@ -294,7 +289,6 @@ section{
     height: 170px;
     overflow:hidden;
     position:relative;
-    padding-top: 400px;
 }
 
   .cloud8 {
@@ -309,7 +303,6 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 325px;
 }
 
   .cloud9 {
@@ -324,7 +317,6 @@ section{
     height: 175px;
     overflow:hidden;
     position:relative;
-    padding-top: 550px;
 }
 
   .cloud10 {
@@ -339,7 +331,6 @@ section{
     height: 175px;
     overflow:hidden;
     position:relative;
-    padding-top: 425px;
 }
 
   .cloud11 {
@@ -354,7 +345,6 @@ section{
     height: 100px;
     overflow:hidden;
     position:relative;
-    padding-top: 600px;
 }
 
   .cloud12 {
@@ -369,7 +359,6 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 500px;
 }
 
   .cloud13 {
@@ -384,7 +373,6 @@ section{
     height: 200px;
     overflow:hidden;
     position:relative;
-    padding-top: 650px;
 }
 
   .cloud14 {

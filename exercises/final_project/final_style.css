@@ -109,7 +109,7 @@ h1 {
     height: 300px;
     overflow:hidden;
     position:relative;
-    padding-top: 200px;
+    object-position: 5;
 }
 
   .cloud2 {
