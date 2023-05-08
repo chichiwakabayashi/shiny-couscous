@@ -28,7 +28,7 @@ section{
 }
 
 .tools-board .row {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .row .options{
@@ -97,7 +97,7 @@ section{
     background: #bbefa3;
 }
 
-.colors .option:selected:before{
+.colors .option.selected::before{
     position:absolute;
     content: "";
     top: 50%;
@@ -110,7 +110,7 @@ section{
     transform: translate(-50%, -50%);
 }
 
-.colors .option:first-child:hover::before{
+.colors .option:first-child.selected::before{
     border-color: rgb(206, 206, 206);
 }
 
@@ -157,6 +157,6 @@ section{
 }
 
 .drawing-board canvas{
-    width:300px;
+    width:400px;
     height: 300px;
 }

@@ -13,7 +13,7 @@
 
 <!--stylesheet-->
 <link rel="stylesheet" href="./style.css">
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -24,14 +24,14 @@
             <div class="row">
             <label class ="title">options</label>
             <ul class="options">
-                <li class="option active">
+                <li class="option active tool" id="brush">
                     <span>brush</span>
                 </li>
-                <li class="option">
+                <li class="option tool" id="eraser">
                     <span>eraser</span>
                 </li>
                 <li class="option">
-                    <input type="range" id="size-slider">
+                    <input type="range" id="size-slider" min="1" max="20" value="3">
                 </li>
             </ul>
             </div>
