@@ -1,7 +1,8 @@
 const canvas = document.getElementById('drawing-board');
 const toolbar = document.getElementById('toolbar');
 const ctx = canvas.getContext('2d');
-
+const post = document.getElementById('post');
+saveImg = document.querySelector(".save-img");
 const canvasOffsetX = canvas.getBoundingClientRect().left;
 const canvasOffsetY = canvas.getBoundingClientRect().top;
 
@@ -56,17 +57,9 @@ canvas.addEventListener('mouseup', e => {
 
 canvas.addEventListener('mousemove', draw);
 
-
-document.getElementById('save').onclick = function () {
-    window.location = document.getElementById("canvas").toDataURL('image/png');
-  };
-
-btn.addEventListener('click', addSketchToPage)
-function addSketchToPage(event){  
-      localStorage.setItem("cloud", strImg);
-      document.querySelector('.gallery');
-      let dataImage = localStorage.getItem('cloud');
-      createElement()
-      image.setAttribute("src", dataImage);  
-}
-
+post.addEventListener("click", () => {
+    const link = dolucment.createElement("a");
+    link.download = '${Date.now()}.jpg';
+    link.href = canvas.toDataURL();
+    link.click();
+});
